@@ -185,4 +185,4 @@ under certain conditions."""
     
     game2.play(othello.game(),
                game2.player(lambda x: minimax.alphabeta(x, 4, othello.edge_eval)),
-               player(), True)
+               game2.player(lambda x:minimax.alphabeta(x,4,othello.bench_eval)), True)

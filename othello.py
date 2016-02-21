@@ -261,7 +261,10 @@ def edge_eval(game):
     return score
 
 def bench_eval(game):
+
     """
+    Reinforcement Learning in The Game Of Othello - By Michiel Van Der Ree and Marco Wiering(IEEE member)
+    http://www.ai.rug.nl/~mwiering/GROUP/ARTICLES/paper-othello.pdf
     A better evaluation function which gives more preference to squares
     on the edge of the board and on the corners.
     """

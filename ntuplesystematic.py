@@ -1,15 +1,16 @@
 # SYSTEMATIC N-TUPLE NETWORKS FOR OTHELLO POSITION EVALUATION
 # http://www.cs.put.poznan.pl/wjaskowski/pub/papers/jaskowski2014ICGAsystematic.pdf
 # Weights have been taken from https://github.com/wjaskowski/TCIAIG-2015-Co-CMA-ES/blob/master/cevo-games/src/main/resources/put/ci/cevo/games/othello/players/published/Jaskowski2014All2.player
-import pickle
 import othello
 import minimax
 import game2
 
 class nTuplesSystematic(object):
-	def __init__(self):
+	def __init__(self, player_type='BOARD_INVERSION'):
 		"""
 		Creates nTuplesSystematic Player using values from nTuplesSystematic.values
+		Type by default is 'BOARD_INVERSION'
+		Type belongs to {'BOARD_INVERSION','DOUBLE_NEGATION'}
 		"""
 		f = open('ntuplesystematic.values', 'r')
 		lut_index = {}
@@ -30,6 +31,10 @@ class nTuplesSystematic(object):
 
 		self.lut_index = lut_index
 		self.lut_values = lut_values
+		if(player_type=='DOUBLE_NEGATION'):
+			self.player_type = player_type
+		else:
+			self.player_type = 'BOARD_INVERSION'
 
 	def get_evaluation_score(self,game):
 		"""
@@ -38,31 +43,32 @@ class nTuplesSystematic(object):
 		"""
 		evaluation_score = 0
 
-		# If next player is white then I am black, hence inversion value is 1, otherwise -1
-		inversion_val = 1 if game.player==1 else -1
 		for key in self.lut_index.keys():
-			lut_values_index = get_board_pos_value(inversion_val*game.board[key[0]/othello.size][key[0]%othello.size])
-			lut_values_index += 3*get_board_pos_value(inversion_val*game.board[key[1]/othello.size][key[1]%othello.size])
+			lut_values_index = get_board_pos_value(game.board[key[0]/othello.size][key[0]%othello.size])
+			lut_values_index += 3*get_board_pos_value(game.board[key[1]/othello.size][key[1]%othello.size])
 			evaluation_score += self.lut_values[self.lut_index[key]][lut_values_index]
 		return evaluation_score
 
-	def play_next_move(self, game):
+	def play_next_move(self, game_orig):
 		"""
-		Since we are using board inversion, we will return the move with best score
+		Returns the best move depending on type of player and game played we will return the best move
 		"""
 		best = None
-		# try each move
-		print game.generate_moves()
+		game = game_orig.copy()
+		if(game.player==1 and self.player_type=='BOARD_INVERSION'):
+			game.invert_game()
+		multiply_factor = 1
+		if(game.player==1 and self.player_type=='DOUBLE_NEGATION'):
+			multiply_factor = -1
 		for move in game.generate_moves():
 			g = game.copy()
 			g.play_move(move)
 			# evaluate the position and choose the best move
-			val = self.get_evaluation_score(g)
-			print move,val
+			val = multiply_factor*self.get_evaluation_score(g)
+			# print move,val
 			# update the best operator so far
 			if best is None or val > best[0]:
 				best = (val, move)
-		print best
 		return best
 
 def get_board_pos_value(game_elem):

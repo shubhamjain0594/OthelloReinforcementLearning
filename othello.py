@@ -22,6 +22,7 @@ class game:
     copy()            - return a deep copy of the game
     score()           - return the current game score
     terminal_test()   - is the game over?
+    invert_game()     - inverts the board by interchanging black, white as well as player
     generate_moves()  - return a list of legal moves
     play_move(move)   - play a legal move in the game
     """
@@ -47,7 +48,7 @@ class game:
             self.board[4][4] = 1
             self.board[3][4] = -1
             self.board[4][3] = -1
-            # its white's move
+            # its black's move
             self.player = -1
         else:
             # copy all the pieces from the old game
@@ -108,7 +109,16 @@ class game:
 
         return True
 
-    
+    def invert_game(self):
+        """
+        Inverts the board so as to interchange black and white as well as player
+        """
+        for i in range_size:
+            for j in range_size:
+                self.board[i][j] = -1*self.board[i][j]
+
+        self.player = -1*self.player
+
     def generate_moves(self):
         """Return the list of legal moves where a move is a tuple.
 

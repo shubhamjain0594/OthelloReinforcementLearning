@@ -361,21 +361,10 @@ if __name__ == "__main__":
 		elif winner == 1:
 			wins[1] += 1
 
+	print wins
 	f = open('results','a')
 	val = (k,0.001,'epsilon',wins)
 	val = str(val)
-	f.write(val)
-
-
-	
-
-
-
-
-
-
-
-
 
 
 

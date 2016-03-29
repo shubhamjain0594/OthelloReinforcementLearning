@@ -1,13 +1,21 @@
 # game2: play a 2 person game
 
 from time import time
+import random
+
+# Used in playing epsilon othello, where user plays random move with epsilon probability
+epsilon = 0.1
 
 class IllegalMove(Exception):
     pass
 
 def play(game, player1, player2, verbose = True):
-    """Play a game between two players. Can raise IllegalMove"""
-
+    """
+    Play a game between two players. 
+    Can raise IllegalMove
+    Player1 is Black
+    Player2 is White
+    """
     next = 1 # player 1 has to move first
     player1_think = 0.0 # total think time
     player1_ply = 0
@@ -43,6 +51,7 @@ def play(game, player1, player2, verbose = True):
                    % (next, str(move), t2-t1, value))
         #check that the move is valid before applying it
         if move not in game.generate_moves():
+            print "IllegalMove"
             raise IllegalMove
         game.play_move(move)
         if verbose:
@@ -70,6 +79,13 @@ def play(game, player1, player2, verbose = True):
             player1_ply+player2_ply, player1_think/player1_ply,
             player2_think/player2_ply)
 
+    if score > 0:
+        return next
+    elif score < 0:
+        return 3-next
+    else:
+        return 0
+
 def user_player(game):
     """Make a user player to play the game."""
 
@@ -93,10 +109,37 @@ class player:
         self.play_fn = play_fn
 
     def play(self, game, opp_move):
+        """
+        returns (value, move) from the players function
+        """
         return self.play_fn(game)
 
     def gameover(self, game, last_move):
         pass
+
+class player_epsilon:
+    """
+    Implements epsilon othello for the player
+    """
+    def __init__(self, play_fn):
+        random.seed()
+        self.play_fn = play_fn
+
+    def play(self, game, opp_move):
+        """
+        returns (value, move) from the players function with 1-epsilon probability
+        returns (0, random move) with epsilon probability
+        """
+        num = random.uniform(0,1)
+        if num <= epsilon:
+            return (0.111, random.choice(game.generate_moves()))
+        else:
+            return self.play_fn(game)
+
+    def gameover(self, game, last_move):
+        pass
+
+
     
 if __name__ == "__main__":
     import othello
@@ -107,25 +150,22 @@ if __name__ == "__main__":
     # Player 1 and Player 2 are evenly matched with 3-ply deep search
     # player 2 wins with a final score of 28
     # player 1 0.2 s per ply player 2 0.4 s per ply
-    play(othello.game(), player(lambda x: minimax.minimax(x, 3)),
-         player(lambda x: minimax.minimax(x, 3)), False)
+    play(othello.game(), player_epsilon(lambda x: minimax.minimax(x, 3)),
+         player_epsilon(lambda x: minimax.minimax(x, 3)), False)
     
     # Experiment 2:
     # now we show the significance of an evaluation function
     # we weaken player1 to 2 ply deep but use the edge eval fun
     # player 1 now beats player 2 with a score of 58!
     # player 1 0.1 s per ply player 2 0.4 s per ply
-    play(othello.game(), player(lambda x: minimax.minimax(x, 2, othello.edge_eval)),
-         player(lambda x: minimax.minimax(x, 3)), False)
+    # play(othello.game(), player(lambda x: minimax.minimax(x, 2, othello.edge_eval)),player(lambda x: minimax.minimax(x, 3)), False)
 
     # Experiment 1 (with alpha-beta):
     # player 1 0.1 s per ply, player 2 0.1 s per ply
-    play(othello.game(), player(lambda x: minimax.alphabeta(x, 3)),
-         player(lambda x: minimax.alphabeta(x, 3)), False)
+    # play(othello.game(), player(lambda x: minimax.alphabeta(x, 3)),player(lambda x: minimax.alphabeta(x, 3)), False)
 
     # Experiment 2 (with alpha-beta):
     # player 1 0.0 s per ply player 2 0.1 s per ply
-    play(othello.game(), player(lambda x: minimax.alphabeta(x, 2, othello.edge_eval)),
-         player(lambda x: minimax.alphabeta(x, 3)), False)
+    # play(othello.game(), player(lambda x: minimax.alphabeta(x, 2, othello.edge_eval)),player(lambda x: minimax.alphabeta(x, 3)), False)
 
 

@@ -1,0 +1,1035 @@
+B
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . W B . . . 
+. . . B W . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+
+(0, (2, 3))
+player 1 plays (2, 3) (in 0.0 s) evaluation value 0
+W
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . . B W . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(2, 2), (2, 4), (4, 2)]
+(2, 2) 2640.88558948
+(2, 4) 2902.63925354
+(4, 2) 3024.45688662
+(3024.4568866189275, (4, 2))
+player 2 plays (4, 2) (in 0.0 s) evaluation value 3024
+B
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . W W W . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+
+(player 2 score 0 )
+(0, (5, 4))
+player 1 plays (5, 4) (in 0.0 s) evaluation value 0
+W
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . W W B . . . 
+. . . . B . . . 
+. . . . . . . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(1, 3), (2, 4), (2, 5), (4, 5), (6, 5)]
+(1, 3) 3081.32996388
+(2, 4) 3394.50265766
+(2, 5) 3128.43402455
+(4, 5) 3521.91013129
+(6, 5) 3606.13845093
+(3606.1384509301433, (6, 5))
+player 2 plays (6, 5) (in 0.0 s) evaluation value 3606
+B
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . W W B . . . 
+. . . . W . . . 
+. . . . . W . . 
+. . . . . . . . 
+
+(player 2 score 0 )
+(1, (5, 2))
+player 1 plays (5, 2) (in 0.0 s) evaluation value 1
+W
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . W B B . . . 
+. . B . W . . . 
+. . . . . W . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(2, 4), (3, 2), (4, 5), (6, 2)]
+(2, 4) 3713.07821633
+(3, 2) 3212.75426384
+(4, 5) 3558.7602751
+(6, 2) 3904.98958318
+(3904.9895831750055, (6, 2))
+player 2 plays (6, 2) (in 0.0 s) evaluation value 3904
+B
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. . W B B . . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 2 score 0 )
+(3, (4, 1))
+player 1 plays (4, 1) (in 0.0 s) evaluation value 3
+W
+. . . . . . . . 
+. . . . . . . . 
+. . . B . . . . 
+. . . B B . . . 
+. B B B B . . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(2, 4), (2, 5), (3, 0), (3, 2)]
+(2, 4) 4048.37716365
+(2, 5) 3761.96162524
+(3, 0) 3097.44305881
+(3, 2) 3729.10164409
+(4048.377163654638, (2, 4))
+player 2 plays (2, 4) (in 0.0 s) evaluation value 4048
+B
+. . . . . . . . 
+. . . . . . . . 
+. . . B W . . . 
+. . . B W . . . 
+. B B B W . . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 2 score 2 )
+(3, (2, 5))
+player 1 plays (2, 5) (in 0.0 s) evaluation value 3
+W
+. . . . . . . . 
+. . . . . . . . 
+. . . B B B . . 
+. . . B B . . . 
+. B B B W . . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(1, 4), (1, 6), (2, 2), (3, 0), (3, 2), (4, 0)]
+(1, 4) 3689.176392
+(1, 6) 3970.28963219
+(2, 2) 3655.49060897
+(3, 0) 3025.16080001
+(3, 2) 3672.83314514
+(4, 0) 3005.19942088
+(3970.2896321877142, (1, 6))
+player 2 plays (1, 6) (in 0.0 s) evaluation value 3970
+B
+. . . . . . . . 
+. . . . . . W . 
+. . . B B W . . 
+. . . B W . . . 
+. B B W W . . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 2 score 4 )
+(13, (4, 5))
+player 1 plays (4, 5) (in 0.0 s) evaluation value 13
+W
+. . . . . . . . 
+. . . . . . W . 
+. . . B B W . . 
+. . . B B . . . 
+. B B B B B . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 1 score 3 )
+[(1, 4), (2, 2), (3, 0), (3, 2), (3, 6)]
+(1, 4) 3989.94127881
+(2, 2) 3726.8153935
+(3, 0) 3280.87306555
+(3, 2) 3912.53165082
+(3, 6) 4020.84113285
+(4020.8411328466254, (3, 6))
+player 2 plays (3, 6) (in 0.0 s) evaluation value 4020
+B
+. . . . . . . . 
+. . . . . . W . 
+. . . B B W . . 
+. . . B B . W . 
+. B B B B W . . 
+. . W . W . . . 
+. . W . . W . . 
+. . . . . . . . 
+
+(player 2 score 0 )
+(15, (7, 2))
+player 1 plays (7, 2) (in 0.0 s) evaluation value 15
+W
+. . . . . . . . 
+. . . . . . W . 
+. . . B B W . . 
+. . . B B . W . 
+. B B B B W . . 
+. . B . W . . . 
+. . B . . W . . 
+. . B . . . . . 
+
+(player 1 score 5 )
+[(1, 2), (1, 4), (2, 2), (3, 2), (4, 0), (6, 1)]
+(1, 2) 3870.55077302
+(1, 4) 3575.82690166
+(2, 2) 3278.70499952
+(3, 2) 3550.01767885
+(4, 0) 2816.87316292
+(6, 1) 3864.55831622
+(3870.5507730236823, (1, 2))
+player 2 plays (1, 2) (in 0.0 s) evaluation value 3870
+B
+. . . . . . . . 
+. . W . . . W . 
+. . . W B W . . 
+. . . B W . W . 
+. B B B B W . . 
+. . B . W . . . 
+. . B . . W . . 
+. . B . . . . . 
+
+(player 2 score 0 )
+(16, (2, 2))
+player 1 plays (2, 2) (in 0.0 s) evaluation value 16
+W
+. . . . . . . . 
+. . W . . . W . 
+. . B B B W . . 
+. . . B W . W . 
+. B B B B W . . 
+. . B . W . . . 
+. . B . . W . . 
+. . B . . . . . 
+
+(player 1 score 3 )
+[(1, 4), (2, 1), (3, 2), (4, 0), (6, 1)]
+(1, 4) 3811.95282891
+(2, 1) 3849.03156348
+(3, 2) 3697.28913607
+(4, 0) 3116.94693926
+(6, 1) 4158.05248816
+(4158.05248816199, (6, 1))
+player 2 plays (6, 1) (in 0.0 s) evaluation value 4158
+B
+. . . . . . . . 
+. . W . . . W . 
+. . B B B W . . 
+. . . B W . W . 
+. B B W B W . . 
+. . W . W . . . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 2 score 2 )
+(23, (5, 6))
+player 1 plays (5, 6) (in 0.0 s) evaluation value 23
+W
+. . . . . . . . 
+. . W . . . W . 
+. . B B B W . . 
+. . . B B . W . 
+. B B W B B . . 
+. . W . W . B . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 1 score 3 )
+[(1, 3), (1, 4), (2, 1), (3, 0), (3, 2), (4, 0), (4, 6), (4, 7), (6, 3), (6, 7)]
+(1, 3) 4121.68610999
+(1, 4) 4247.18373644
+(2, 1) 4220.31462192
+(3, 0) 3536.95924438
+(3, 2) 4053.76301201
+(4, 0) 3519.63449808
+(4, 6) 4218.70569761
+(4, 7) 3645.06599325
+(6, 3) 4189.87262611
+(6, 7) 3953.59968073
+(4247.183736438548, (1, 4))
+player 2 plays (1, 4) (in 0.0 s) evaluation value 4247
+B
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . . B W . W . 
+. B B W W B . . 
+. . W . W . B . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 2 score 4 )
+(20, (5, 5))
+player 1 plays (5, 5) (in 0.0 s) evaluation value 20
+W
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . . B W . W . 
+. B B W B B . . 
+. . W . W B B . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 1 score -1 )
+[(1, 3), (2, 1), (3, 0), (3, 2), (3, 5), (4, 0), (4, 6), (4, 7), (5, 1), (5, 7), (6, 3), (6, 7)]
+(1, 3) 4272.70249189
+(2, 1) 4331.76636602
+(3, 0) 3471.08648843
+(3, 2) 4045.34465292
+(3, 5) 4214.61354504
+(4, 0) 3453.76174213
+(4, 6) 4159.41108132
+(4, 7) 3568.66462748
+(5, 1) 4589.48306565
+(5, 7) 3217.8662591
+(6, 3) 4123.99987017
+(6, 7) 3964.73049917
+(4589.483065649008, (5, 1))
+player 2 plays (5, 1) (in 0.0 s) evaluation value 4589
+B
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . . W W . W . 
+. B W W B B . . 
+. W W . W B B . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 2 score 6 )
+(29, (3, 2))
+player 1 plays (3, 2) (in 0.1 s) evaluation value 29
+W
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . B W W . W . 
+. B B W B B . . 
+. W B . W B B . 
+. W B . . W . . 
+. . B . . . . . 
+
+(player 1 score -1 )
+[(1, 1), (1, 3), (2, 1), (3, 1), (3, 5), (4, 0), (4, 6), (4, 7), (5, 0), (5, 3), (5, 7), (6, 3), (6, 6), (6, 7), (7, 3)]
+(1, 1) 4376.71223644
+(1, 3) 4425.8575507
+(2, 1) 4462.00028158
+(3, 1) 4422.98392259
+(3, 5) 4426.76024166
+(4, 0) 3638.94595291
+(4, 6) 4356.70029688
+(4, 7) 3780.81132409
+(5, 0) 3699.35925976
+(5, 3) 4437.4327385
+(5, 7) 3430.01295572
+(6, 3) 4252.52109699
+(6, 6) 4585.00928873
+(6, 7) 4176.87719579
+(7, 3) 4068.59563486
+(4585.009288734146, (6, 6))
+player 2 plays (6, 6) (in 0.0 s) evaluation value 4585
+B
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . B W W . W . 
+. B B W W B . . 
+. W B . W W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score 6 )
+(42, (5, 3))
+player 1 plays (5, 3) (in 0.1 s) evaluation value 42
+W
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . B B W . W . 
+. B B B W B . . 
+. W B B B B B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score 3 )
+[(1, 1), (2, 1), (3, 1), (3, 5), (4, 0), (4, 6), (4, 7), (5, 0), (5, 7), (6, 3), (6, 4), (6, 7), (7, 1), (7, 3)]
+(1, 1) 4369.32525582
+(2, 1) 4437.58329472
+(3, 1) 4379.53232021
+(3, 5) 4554.61642602
+(4, 0) 3578.13884623
+(4, 6) 4408.39167323
+(4, 7) 3702.14161795
+(5, 0) 3650.05027661
+(5, 7) 3530.05688407
+(6, 3) 4269.61527003
+(6, 4) 4318.9861285
+(6, 7) 4159.91419624
+(7, 1) 4132.80700207
+(7, 3) 4084.08563341
+(4554.616426024692, (3, 5))
+player 2 plays (3, 5) (in 0.0 s) evaluation value 4554
+B
+. . . . . . . . 
+. . W . W . W . 
+. . B B W W . . 
+. . B B W W W . 
+. B B B W W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score 2 )
+(41, (2, 6))
+player 1 plays (2, 6) (in 0.1 s) evaluation value 41
+W
+. . . . . . . . 
+. . W . W . W . 
+. . B B B B B . 
+. . B B W B W . 
+. B B B B W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score 7 )
+[(1, 1), (1, 5), (2, 1), (3, 1), (4, 0), (4, 6), (4, 7), (5, 0), (5, 7), (6, 3), (6, 4), (6, 7), (7, 3)]
+(1, 1) 4485.45189003
+(1, 5) 4869.63342114
+(2, 1) 4820.92732894
+(3, 1) 4526.61277123
+(4, 0) 3730.33010219
+(4, 6) 4557.50242957
+(4, 7) 3790.86539393
+(5, 0) 3856.71679753
+(5, 7) 3680.15249335
+(6, 3) 4446.27256824
+(6, 4) 4567.75309124
+(6, 7) 4233.68479574
+(7, 3) 4252.37322512
+(4869.633421140935, (1, 5))
+player 2 plays (1, 5) (in 0.0 s) evaluation value 4869
+B
+. . . . . . . . 
+. . W . W W W . 
+. . B B W W B . 
+. . B W W W W . 
+. B W B B W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score 4 )
+(39, (3, 7))
+player 1 plays (3, 7) (in 0.1 s) evaluation value 39
+W
+. . . . . . . . 
+. . W . W W W . 
+. . B B W W B . 
+. . B B B B B B 
+. B W B B W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score 5 )
+[(1, 1), (2, 1), (2, 7), (3, 1), (4, 0), (4, 6), (4, 7), (5, 0), (5, 7), (6, 3), (6, 4), (6, 7), (7, 3)]
+(1, 1) 4257.78496685
+(2, 1) 4291.10034935
+(2, 7) 4005.62627985
+(3, 1) 4336.33050553
+(4, 0) 3574.23404143
+(4, 6) 4100.15651654
+(4, 7) 3765.00831981
+(5, 0) 3471.46512771
+(5, 7) 3412.38384636
+(6, 3) 4178.50392126
+(6, 4) 4316.7369465
+(6, 7) 3965.91614875
+(7, 3) 3984.60457814
+(4336.330505531753, (3, 1))
+player 2 plays (3, 1) (in 0.0 s) evaluation value 4336
+B
+. . . . . . . . 
+. . W . W W W . 
+. . B B W W B . 
+. W B B B B B B 
+. W W B B W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score -2 )
+(55, (2, 0))
+player 1 plays (2, 0) (in 0.1 s) evaluation value 55
+W
+. . . . . . . . 
+. . W . W W W . 
+B . B B W W B . 
+. B B B B B B B 
+. W B B B W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score 7 )
+[(1, 1), (2, 1), (2, 7), (4, 6), (4, 7), (5, 7), (6, 3), (6, 4), (6, 7), (7, 3)]
+(1, 1) 4125.10123837
+(2, 1) 4052.2667846
+(2, 7) 3765.06902889
+(4, 6) 3859.59926558
+(4, 7) 3524.45106885
+(5, 7) 3171.8265954
+(6, 3) 3960.50210204
+(6, 4) 4053.24680606
+(6, 7) 3725.35889779
+(7, 3) 3744.04732718
+(4125.10123836761, (1, 1))
+player 2 plays (1, 1) (in 0.0 s) evaluation value 4125
+B
+. . . . . . . . 
+. W W . W W W . 
+B . W B W W B . 
+. B B W B B B B 
+. W B B W W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score 0 )
+(60, (1, 3))
+player 1 plays (1, 3) (in 0.1 s) evaluation value 60
+W
+. . . . . . . . 
+. W W B W W W . 
+B . B B B W B . 
+. B B W B B B B 
+. W B B W W . . 
+. W B B B W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score 5 )
+[(0, 3), (1, 7), (2, 1), (2, 7), (3, 0), (4, 6), (4, 7), (5, 7), (6, 3), (6, 4), (6, 7), (7, 1), (7, 3)]
+(0, 3) 3052.49896894
+(1, 7) 3689.13283822
+(2, 1) 4178.90025187
+(2, 7) 3674.31570895
+(3, 0) 3693.59373631
+(4, 6) 3742.58199004
+(4, 7) 3433.69774891
+(5, 7) 3081.07327547
+(6, 3) 3931.12613684
+(6, 4) 3984.77020911
+(6, 7) 3634.60557786
+(7, 1) 3702.01537591
+(7, 3) 3653.29400724
+(4178.900251874132, (2, 1))
+player 2 plays (2, 1) (in 0.0 s) evaluation value 4178
+B
+. . . . . . . . 
+. W W B W W W . 
+B W W W W W B . 
+. W W W B B B B 
+. W B W W W . . 
+. W B B W W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 2 score 10 )
+(62, (4, 6))
+player 1 plays (4, 6) (in 0.1 s) evaluation value 62
+W
+. . . . . . . . 
+. W W B W W W . 
+B W W W W W B . 
+. W W W B B B B 
+. W B B B B B . 
+. W B B W W B . 
+. W B . . W W . 
+. . B . . . . . 
+
+(player 1 score -3 )
+[(0, 2), (0, 3), (0, 4), (2, 7), (4, 7), (5, 7), (6, 3), (6, 4), (6, 7), (7, 3)]
+(0, 2) 3293.69659793
+(0, 3) 2998.30146194
+(0, 4) 3068.1831343
+(2, 7) 3619.75411756
+(4, 7) 3431.71005201
+(5, 7) 3312.07604319
+(6, 3) 3845.69451047
+(6, 4) 3868.41460536
+(6, 7) 3655.66521152
+(7, 3) 3575.15599711
+(3868.4146053643294, (6, 4))
+player 2 plays (6, 4) (in 0.0 s) evaluation value 3868
+B
+. . . . . . . . 
+. W W B W W W . 
+B W W W W W B . 
+. W W W B B B B 
+. W W B B B B . 
+. W B W W W B . 
+. W B . W W W . 
+. . B . . . . . 
+
+(player 2 score 8 )
+(64, (0, 3))
+player 1 plays (0, 3) (in 0.1 s) evaluation value 64
+W
+. . . B . . . . 
+. W W B B W W . 
+B W W W W B B . 
+. W W W B B B B 
+. W W B B B B . 
+. W B W W W B . 
+. W B . W W W . 
+. . B . . . . . 
+
+(player 1 score -3 )
+[(0, 2), (0, 4), (0, 5), (1, 7), (2, 7), (4, 7), (5, 7), (6, 3), (6, 7), (7, 1), (7, 3)]
+(0, 2) 2985.00813215
+(0, 4) 2756.21079123
+(0, 5) 2527.63543974
+(1, 7) 3072.31778003
+(2, 7) 3047.07455961
+(4, 7) 3071.04040154
+(5, 7) 2660.34651062
+(6, 3) 3313.97329321
+(6, 7) 3046.03071721
+(7, 1) 2978.95824343
+(7, 3) 2925.9243939
+(3313.9732932137554, (6, 3))
+player 2 plays (6, 3) (in 0.0 s) evaluation value 3313
+B
+. . . B . . . . 
+. W W B B W W . 
+B W W W W B B . 
+. W W W B B B B 
+. W W B B B B . 
+. W W W W W B . 
+. W W W W W W . 
+. . B . . . . . 
+
+(player 2 score 8 )
+(72, (0, 4))
+player 1 plays (0, 4) (in 0.0 s) evaluation value 72
+W
+. . . B B . . . 
+. W W B B B W . 
+B W W W W B B . 
+. W W W B B B B 
+. W W B B B B . 
+. W W W W W B . 
+. W W W W W W . 
+. . B . . . . . 
+
+(player 1 score -5 )
+[(0, 2), (0, 5), (0, 6), (1, 7), (2, 7), (4, 7), (5, 7), (6, 7)]
+(0, 2) 2710.89502825
+(0, 5) 2807.14929288
+(0, 6) 2784.07204719
+(1, 7) 2767.96540129
+(2, 7) 2807.46119018
+(4, 7) 2752.22475383
+(5, 7) 2347.5468167
+(6, 7) 2733.2310233
+(2807.4611901767116, (2, 7))
+player 2 plays (2, 7) (in 0.0 s) evaluation value 2807
+B
+. . . B B . . . 
+. W W B B B W . 
+B W W W W W W W 
+. W W W B B W B 
+. W W B B W B . 
+. W W W W W B . 
+. W W W W W W . 
+. . B . . . . . 
+
+(player 2 score 14 )
+(73, (6, 0))
+player 1 plays (6, 0) (in 0.0 s) evaluation value 73
+W
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W B 
+. W B B B W B . 
+. B W W W W B . 
+B W W W W W W . 
+. . B . . . . . 
+
+(player 1 score -5 )
+[(0, 5), (4, 0), (4, 7), (5, 0), (5, 7), (6, 7)]
+(0, 5) 2105.3335636
+(4, 0) 1682.8584091
+(4, 7) 2158.63199632
+(5, 0) 1894.74475166
+(5, 7) 1634.46349766
+(6, 7) 2110.71687253
+(2158.6319963172105, (4, 7))
+player 2 plays (4, 7) (in 0.0 s) evaluation value 2158
+B
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W W W W . 
+B W W W W W W . 
+. . B . . . . . 
+
+(player 2 score 12 )
+(71, (7, 4))
+player 1 plays (7, 4) (in 0.0 s) evaluation value 71
+W
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W B W W . 
+. . B . B . . . 
+
+(player 1 score -7 )
+[(0, 2), (0, 5), (4, 0), (5, 0), (7, 3), (7, 5)]
+(0, 2) 1183.96797925
+(0, 5) 1096.99041336
+(4, 0) 674.515258867
+(5, 0) 886.401601431
+(7, 3) 1630.77433002
+(7, 5) 1218.65771093
+(1630.774330015889, (7, 3))
+player 2 plays (7, 3) (in 0.0 s) evaluation value 1630
+B
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W W W W . 
+. . B W B . . . 
+
+(player 2 score 10 )
+(55, (7, 6))
+player 1 plays (7, 6) (in 0.0 s) evaluation value 55
+W
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W W B W . 
+. . B W B . B . 
+
+(player 1 score -7 )
+[(0, 2), (0, 5), (4, 0), (5, 0), (7, 1), (7, 5)]
+(0, 2) 823.501510414
+(0, 5) 736.523944531
+(4, 0) 314.048790035
+(5, 0) 525.935132599
+(7, 1) 919.655041074
+(7, 5) 1133.3952682
+(1133.3952682004804, (7, 5))
+player 2 plays (7, 5) (in 0.0 s) evaluation value 1133
+B
+. . . B B . . . 
+. W W B B B W . 
+B W W W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W W W W . 
+. . B W W W B . 
+
+(player 2 score 12 )
+(40, (0, 0))
+player 1 plays (0, 0) (in 0.0 s) evaluation value 40
+W
+B . . B B . . . 
+. B W B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W W W W . 
+. . B W W W B . 
+
+(player 1 score -7 )
+[(0, 1), (0, 2), (0, 5), (1, 0), (4, 0), (5, 0), (7, 1), (7, 7)]
+(0, 1) 761.8518935
+(0, 2) 645.7826357
+(0, 5) 561.113484275
+(1, 0) 860.583789984
+(4, 0) 138.638329779
+(5, 0) 350.524672343
+(7, 1) 744.244580817
+(7, 7) 1695.2077711
+(1695.2077711030827, (7, 7))
+player 2 plays (7, 7) (in 0.0 s) evaluation value 1695
+B
+B . . B B . . . 
+. B W B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B W W B W W . 
+B W W W W W W . 
+. . B W W W W W 
+
+(player 2 score 10 )
+(33, (7, 0))
+player 1 plays (7, 0) (in 0.0 s) evaluation value 33
+W
+B . . B B . . . 
+. B W B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. B B W B W W . 
+B B W W W W W . 
+B . B W W W W W 
+
+(player 1 score -5 )
+[(0, 1), (0, 2), (0, 5), (1, 0), (4, 0), (5, 0), (7, 1)]
+(0, 1) 1379.02248673
+(0, 2) 1262.95322893
+(0, 5) 1178.2840775
+(1, 0) 1477.75438321
+(4, 0) 864.596574706
+(5, 0) 1046.04996669
+(7, 1) 1791.43915097
+(1791.439150965583, (7, 1))
+player 2 plays (7, 1) (in 0.0 s) evaluation value 1791
+B
+B . . B B . . . 
+. B W B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. W B W B W W . 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 2 score 12 )
+(47, (0, 2))
+player 1 plays (0, 2) (in 0.0 s) evaluation value 47
+W
+B . B B B . . . 
+. B B B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. W B W B W W . 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 1 score -9 )
+[(0, 1), (0, 5), (0, 6), (1, 0)]
+(0, 1) 1581.28522225
+(0, 5) 1324.08460538
+(0, 6) 1348.20286234
+(1, 0) 1408.40313953
+(1581.2852222485349, (0, 1))
+player 2 plays (0, 1) (in 0.0 s) evaluation value 1581
+B
+B W B B B . . . 
+. W W B B B W . 
+B W B W B W W W 
+. W W B B B W W 
+. W B B B W W W 
+. W B W B W W . 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 2 score 14 )
+(54, (0, 7))
+player 1 plays (0, 7) (in 0.0 s) evaluation value 54
+W
+B W B B B . . B 
+. W W B B B B . 
+B W B W B B W W 
+. W W B B B W W 
+. W B B B W W W 
+. W B W B W W . 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 1 score -9 )
+[(0, 5), (0, 6), (1, 7)]
+(0, 5) 683.131583053
+(0, 6) 1145.67541996
+(1, 7) 1598.59270863
+(1598.592708630603, (1, 7))
+player 2 plays (1, 7) (in 0.0 s) evaluation value 1598
+B
+B W B B B . . B 
+. W W W W W W W 
+B W B W B B W W 
+. W W B B B W W 
+. W B B B W W W 
+. W B W B W W . 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 2 score 18 )
+(95, (5, 7))
+player 1 plays (5, 7) (in 0.0 s) evaluation value 95
+W
+B W B B B . . B 
+. W W W W W W B 
+B W B W B B W B 
+. W W B B B W B 
+. W B B B W B B 
+. W B W B B B B 
+B W W W W W W . 
+B W W W W W W W 
+
+(player 1 score -3 )
+[(0, 5), (6, 7)]
+(0, 5) 965.412197372
+(6, 7) 1340.52766572
+(1340.52766572058, (6, 7))
+player 2 plays (6, 7) (in 0.0 s) evaluation value 1340
+B
+B W B B B . . B 
+. W W W W W W B 
+B W B W B B W B 
+. W W B B B W B 
+. W B B B W B B 
+. W B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 2 score 6 )
+(100, (5, 0))
+player 1 plays (5, 0) (in 0.0 s) evaluation value 100
+W
+B W B B B . . B 
+. W W W W W W B 
+B W B W B B W B 
+. W W B B B W B 
+. W B B B W B B 
+B B B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 1 score -3 )
+[(0, 5), (4, 0)]
+(0, 5) 726.859169952
+(4, 0) 533.887007953
+(726.8591699515573, (0, 5))
+player 2 plays (0, 5) (in 0.0 s) evaluation value 726
+B
+B W W W W W . B 
+. W W W W W W B 
+B W B W B B W B 
+. W W B B B W B 
+. W B B B W B B 
+B B B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 2 score 10 )
+(111, (0, 6))
+player 1 plays (0, 6) (in 0.0 s) evaluation value 111
+W
+B B B B B B B B 
+. W W W W B B B 
+B W B W B B B B 
+. W W B B B B B 
+. W B B B W B B 
+B B B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 1 score 9 )
+[(4, 0)]
+(4, 0) 174.670954592
+(174.6709545924655, (4, 0))
+player 2 plays (4, 0) (in 0.0 s) evaluation value 174
+B
+B B B B B B B B 
+. W W W W B B B 
+B W B W B B B B 
+. W W B B B B B 
+W W B B B W B B 
+B W B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 2 score -6 )
+(1000, (3, 0))
+player 1 plays (3, 0) (in 0.0 s) evaluation value 1000
+W
+B B B B B B B B 
+. W B W W B B B 
+B B B W B B B B 
+B B B B B B B B 
+B B B B B W B B 
+B W B W B B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 1 score 19 )
+[(1, 0)]
+(1, 0) 629.822507785
+(629.8225077850179, (1, 0))
+player 2 plays (1, 0) (in 0.0 s) evaluation value 629
+B
+B B B B B B B B 
+W W B W W B B B 
+B W B W B B B B 
+B B W B B B B B 
+B B B W B W B B 
+B W B W W B W B 
+B W W W W W W W 
+B W W W W W W W 
+
+(player 2 score -10 )
+player 1 won with score 10
+60 ply: Player 1 0.0 s per ply. Player2 0.0 s per ply

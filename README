@@ -9,3 +9,18 @@ INSTALLATION INSTRUCTIONS
 =========================
 
 sudo apt-get install python-tk
+
+# Installing edax engine
+# Download latest engine from http://abulmo.perso.neuf.fr/edax/4.3/index.htm
+# Following installation instructions from here https://github.com/johncheetham/othelloTk
+# Using python3 with virtualenv virtualenv -p python3 envname
+sudo apt-get install python3-tk
+pip install othellotk
+
+GAME INSTRUCTIONS
+=================
+
+Black is represented by -1 on the board
+White is represented by 1 on the board
+Empty is represented by 0 on the board
+game.player() - Returns current player

@@ -58,7 +58,6 @@ def minimax(game, maxply, eval_fn = None):
         # update the best operator so far
         if best is None or val > best[0]:
             best = (val, move)
-    print best
     return best
 
 def alphabeta_value(game, maxply, alpha, beta, eval_fn = None):

@@ -9,7 +9,7 @@ import random
 class nn:
 	def __init__(self):
 		self.x = [[-1,1] for x in range(64)]
-		self.net = nl.net.newff(self.x,[50,1])
+		self.net = nl.net.newff(self.x,[1])
 		#self.net.trainf = nl.train.train_gd
 		self.moveb = 0
 		self.movew = 0
@@ -317,7 +317,7 @@ class nn:
 	def reset(self):
 		#print self.fin_v
 		#print self.fin_val
-		error = self.net.train(self.fin_v,self.fin_val,epochs=1,show=1)
+		error = self.net.train(self.fin_v,self.fin_val,epochs=5,show=1)
 		self.moveb = 0
 		self.movew = 0
 		self.last_vb = 0
@@ -342,7 +342,7 @@ if __name__ == "__main__":
 	game2.play(othello.game(), game2.player(lambda x: playernew.play_move(x)),game2.player(lambda x: nTuplesSystematicObject.play_next_move(x)), True)
 	playernew.reset_without_train()
 	time.sleep(5)
-	k = 10000
+	k = 100
 	for i in range(k):
 		print(i)
 		game2.play(othello.game(), game2.player(lambda x: playernew.play_move(x,0.3)),game2.player(lambda x: playernew.play_move(x,0.3)), False)

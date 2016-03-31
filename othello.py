@@ -25,6 +25,8 @@ class game:
     invert_game()     - inverts the board by interchanging black, white as well as player
     generate_moves()  - return a list of legal moves
     play_move(move)   - play a legal move in the game
+
+    Board is represented by 1 for white and -1 for black
     """
     
     
@@ -262,54 +264,6 @@ def edge_eval(game):
                 delta -= 5
             if j == 1 or j == (size_m -1):
                 delta -=5
-            
-            if game.board[i][j] == game.player:
-                score += delta
-            elif game.board[i][j] == opp:
-                score -= delta
-
-    return score
-
-def bench_eval(game):
-
-    """
-    Reinforcement Learning in The Game Of Othello - By Michiel Van Der Ree and Marco Wiering(IEEE member)
-    http://www.ai.rug.nl/~mwiering/GROUP/ARTICLES/paper-othello.pdf
-    A better evaluation function which gives more preference to squares
-    on the edge of the board and on the corners.
-    """
-
-    # if the game is over, give a 1000 point bonus to the winning player
-    if game.terminal_test():
-        score = game.score()
-        if score > 0:
-            return 1000
-        elif score < 0:
-            return -1000
-        else:
-            return 0
-        
-
-    opp = -1 * game.player # the opponent
-    board_values = [[80,-26,24,-1,-5,28,-18,76],
-					[-23,-39,-18,-9,-6,-8,-39,-1],
-					[46,-16,4,1,-3,6,-20,52],
-					[-13,-5,2,-1,4,3,-12,-2],
-					[5,-6,1,-2,-3,0,-9,-5],
-					[48,-13,12,5,0,5,-24,41],
-					[-27,-53,-11,-1,-11,-16,-58,-15],
-					[87,-25,27,-1,5,36,-3,100]]
-    score = 0
-    for i in range_size:
-        for j in range_size:
-            # any piece gets a value of 1
-            # an edge piece gets a value of 6
-            # a corner piece gets a value of 11
-            # subtract 10 for the four diagonal square near the corners
-            # subtract 5 for the rows and cols near the edge
-            # TODO: only charge the penalty when the edge or corner is not
-            # occupied
-            delta = board_values[i][j]
             
             if game.board[i][j] == game.player:
                 score += delta

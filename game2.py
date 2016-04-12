@@ -62,19 +62,19 @@ def play(game, player1, player2, verbose = True):
 
 
     score = game.score()
-    if score > 0:
-        print "player "+str(next)+" won with score", score
-    elif score < 0:
-        print "player "+str(3-next)+" won with score", -1*score
-    else:
-        winner = 0
-        print "DRAW!!"
+    if verbose:
+        if score > 0:
+            print "player "+str(next)+" won with score", score
+        elif score < 0:
+            print "player "+str(3-next)+" won with score", -1*score
+        else:
+            print "DRAW!!"
 
     temp = game.copy()
     player1.gameover(temp, last_move)
     player2.gameover(temp, last_move)
 
-    if player1_ply and player2_ply:
+    if player1_ply and player2_ply and verbose:
         print "%d ply: Player 1 %.1f s per ply. Player2 %.1f s per ply" % (
             player1_ply+player2_ply, player1_think/player1_ply,
             player2_think/player2_ply)

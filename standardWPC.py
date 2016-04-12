@@ -2,6 +2,9 @@ import game2
 import othello
 
 """
+Taku Yoshioka, Shin Ishii, and Minoru Ito. Strategy acquisition for
+the game. Strategy Acquisition for the Game Othello Based on
+Reinforcement Learning, 82(12):1618–1626, 1999.
 """
 class standardWPCPlayer(object):
     def __init__(self):
